@@ -1,0 +1,38 @@
+/* This is the CSS module file for the Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* This stretches the content out */
+    align-items: center;
+    background-color: #5cd0f7; /* Updated from #333 */
+    color: white;
+    padding: 1rem 2rem; /* Added more padding */
+    font-size: 1.2rem;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.logo img {
+    height: 45px; /* Adjust this to your logo's desired height */
+    width: auto; /* This will maintain the aspect ratio */
+    display: block; /* This helps prevent extra bottom space */
+}
+.links {
+    display: flex;
+    gap: 1.5rem; /* A modern way to add spacing */
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+}
+
+    /* We can now use pseudo-selectors, which we couldn't with inline styles */
+    .navLink:hover {
+        color: #ddd;
+        text-decoration: underline;
+    }

@@ -6,7 +6,7 @@
     align-items: center;
     background-color: #5cd0f7; /* Updated from #333 */
     color: white;
-    padding: 1rem 2rem; /* Added more padding */
+    padding: 0.05rem 1rem; /* Added more padding */
     font-size: 1.2rem;
 }
 
@@ -17,9 +17,10 @@
     font-size: 1.5rem;
 }
 .logo img {
-    height: 45px; /* Adjust this to your logo's desired height */
+    height: 65px; /* Adjust this to your logo's desired height */
     width: auto; /* This will maintain the aspect ratio */
     display: block; /* This helps prevent extra bottom space */
+    margin:0;
 }
 .links {
     display: flex;

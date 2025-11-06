@@ -26,9 +26,7 @@ def login_for_access_token(db: collection = Depends(get_db),form_data: OAuth2Pas
             headers={"WWW-Authenticate": "Bearer"},
         )
     # 3. Create the token
-    access_token = create_access_token(
-        data={"sub": user.username}
-    )
+    access_token = create_access_token(data={"sub": user.username})
     # 4. Return the token
     return {"access_token": access_token, "token_type": "bearer"}
 
